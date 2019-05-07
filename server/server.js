@@ -7,7 +7,7 @@ const {auth} = require('./Middleware/auth');
 
 const port = process.env.port || 3000;
 const app = express();
-
+  
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/auth', {useNewUrlParser: true});
 
